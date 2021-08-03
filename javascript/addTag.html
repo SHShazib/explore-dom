@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Added</title>
+    <style>
+        article{
+            border: 2px solid black;
+            margin: 20px;
+            padding: 10px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <article id="first-article">
+        <h2>Subject-1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, tempora.</p>
+    </article>
+    <article>
+        <h2>Subject-2</h2>
+        <p>Dolores quo, nesciunt perferendis omnis quae accusamus repellendus explicabo consequuntur.</p>
+    </article>
+    <article id="third-article">
+        <h2>Subject-3</h2>
+        <p>Blanditiis qui incidunt deserunt rerum repellat tempora hic perferendis omnis.</p>
+    </article>
+    <article>
+        <h2>Subject-4</h2>
+        <p>Maiores nihil vitae tenetur distinctio, aliquid perferendis officiis enim vero?</p>
+    </article>
+    <article>
+        <ul id="gift">
+            <li>Gift-item</li>
+            <li>Gift-item</li>
+            <li>Gift-item</li>
+            <li>Gift-item</li>
+            <li>Gift-item</li>
+        </ul>
+    </article>
+
+
+
+    <script>
+            // A new tag in article tag
+
+        const article = document.getElementById('first-article');
+        const newParagraph =document.createElement('p');
+        newParagraph.innerHTML = 'I am the new Paragraph.';
+        newParagraph.style.color = 'red';
+        article.appendChild(newParagraph);
+
+        // A new tag in article tag
+        const third = document.getElementById('third-article');
+        const newThird =document.createElement('h4');
+        newThird.innerHTML= 'I am the third heading.'
+        third.appendChild(newThird);
+
+
+        // A new tag in a ul list
+        const ul = document.getElementById('gift');
+        const newListItem = document.createElement('li');
+        newListItem.innerHTML = 'New Gift Item';
+        ul.appendChild(newListItem);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore DOM</title>
+    <style>
+        h2 {
+            text-align: center;
+            color: aqua;
+        }
+        article {
+            border: 3px solid black;
+           
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h2>Article-1</h2>
+        <p class="author">Authors-1</p>
+        <p class="description">Paragraphsiore the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.</p>
+    </article>
+    <article>
+        <h2>Article-2</h2>
+        <p class="author">Authors-2</p>
+        <p class="description">Paragraphsiore the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.</p>
+    </article>
+    <article>
+        <h2>Article-3</h2>
+        <p class="author">Authors-3</p>
+        <p class="description">Paragraphsiore the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.</p>
+    </article>
+    <article>
+        <h2>Article-4</h2>
+        <p class="author">Authors-4</p>
+        <p class="description">Paragraphsiore the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.</p>
+    </article>
+    <article>
+        <h2>Article-5</h2>
+        <p class="author">Authors-5</p>
+        <p class="description">Paragraphsiore the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.</p>
+    </article>
+
+
+
+
+
+
+
+
+    <script>
+// ===========================by Class==========================
+            var authors = document.getElementsByClassName('author');
+         for (var i=0; i<authors.length; i++){
+            var element = authors[i];
+            
+            element.innerHTML = 'Lekhok-'+ (i+1);
+            element.style.margin= '10px';
+            element.style.color = 'black';
+            element.style.fontSize = '20px';
+
+        }
+
+// ==========================queryselector =====================
+        var article = document.querySelectorAll('article');
+         for (var i=0; i<article.length; i++){
+            var element = article[i];
+            element.style.margin= '25px';
+            element.style.color = 'white';
+            element.style.backgroundColor = 'green';
+
+        }
+      
+
+
+        
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
